@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul id="navUl">
+        <li class="navItem"><a href="#">Home</a></li>
+        <li class="navItem"><a href="#form">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <video loop autoplay src="multimedia/videoInitial.webm" controls></video>
+
+
+
+    <div class="row" id="items"></div>
+
+    <template id="template-card">
+      <div class="card">
+        <h5></h5>
+          <img id="image" src="" alt="" class="img-thumbnail my-4"></img>
+      </div>
+    </template>   
+    
+    
+    <div id="detail"></div>
+
+    <div id="listaCompra"></div>
+
+    <div id="listaTotal"></div>
+
+    <div class="contenedor-Formulario">
+      <div class="content">
+         
+          <form action="" class="form" id="form" onsubmit=""><!--functionSubmit(event)-->
+              <h2>Join our community</h2>
+              <input id="inputName" type="text" placeholder="Enter name" required >
+              <input id="email" type="Email" name="email" placeholder="Enter email" required>
+              <select name="gender" id="gender" value="Gender">
+                  <option value="0">Gender</option>
+                  <option value="F">Female</option>
+                  <option value="M">Male</option>
+                  <option value="O">Other</option>
+              </select>
+              <label for="">Menssage</label>
+              <textarea id="msm" cols="30" rows="10" ></textarea>
+              <input type="submit" value="Submit">
+          </form>
+      </div>
+  </div>
+  </main>
+
+
+ 
+
+
+  <footer>
+    <div class="containerF">
+      <p>
+        Privacy policy Legal notice Terms and conditions Follow us 
+        on Facebook Instagram Pinterest Twitter Linkedin
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js" type="module"></script>
+  <script src="data/data.js" type="module"></script>
+</body>
+
+</html>

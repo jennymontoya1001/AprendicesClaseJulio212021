@@ -1,0 +1,223 @@
+
+:root{ /*permite dar estilos globales o generales a todo el documento*/
+    --varColor:#3A3539;
+    --varLetra:white;
+    }
+    
+
+body{
+    background: black; /*color fondo*/ 
+    color: white; /*color base*/
+    margin: 0;/*quita el margen que trae el body por defecto*/
+    overflow-x: hidden; /*ocultar el scroll horizontal del body*/
+    
+}
+
+video{
+   width: 100%; /*así se adapta al 100% del ancho de la página, 
+   es útil para moviles*/
+  /* max-width: 600px; máximo de ancho de 600px*/
+   max-height: 400px;
+  /*  margin-left: 25%; */
+}
+
+a{
+    color: white;
+    text-decoration: none;/*Elimina la línea de abajo 
+    que indica enlace*/
+}
+
+/*ul*/
+#navUl{
+ padding: 0; /*le quitamos el padding 
+ que trae por defecto en ul*/
+  margin: 0;
+  text-align: center;
+  margin-left:10%;;
+}
+
+/*li*/
+.navItem{
+   list-style: none; /*elimina las viñetas del li */
+   display: inline;
+   letter-spacing: 2px; /*Espaciado en las letras*/
+   line-height: 6; /*alto de la línea*/
+   /*border: 5px solid red;*/
+   margin-right: 10%;
+}
+
+/*imagenes superheroes*/
+#image{
+    max-width: 100%;
+    width: 100px;
+    margin-left: 25px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer; /*la mano del cursor*/
+}
+
+
+
+/*tarjeta*/
+.card{
+    /*border: 1px solid red;*/
+    display: inline-block;
+   /* margin: 20px;*/
+    /*white-space: nowrap; */
+   
+}
+
+#template-card{
+  display: flex;
+  
+  /*overflow-x: scroll; sirve para generar un scroll*/
+}
+
+/*row del id items*/
+.row{
+    margin-left: 50px;
+}
+
+h5{
+    text-align: center;
+}
+
+#form{
+    border: 1px solid white;
+    max-width: 50%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.contenedor-Formulario{
+    width: 100%;   
+    margin-left: 25%;
+}
+
+
+.form h2{
+    font-size: 24px;
+    color: var(--varLetra);
+  }
+ 
+/*lista de generos*/
+.form input, select{
+      inline-size: 100%;
+      border:1px solid var(--varColor) ;
+      box-sizing: border-box;
+      color:white;
+      background-color:#251F24 ;
+      border-radius: 8px;
+      padding-inline: 16px;
+      padding-block: 12px;
+      color:var(--varLetra);
+      font-size: 16px;
+      margin-block-end:24px
+}
+
+.form input[type="submit"]{
+    background: #157EFB;
+    border: none;
+}
+
+
+.form label{
+   color: var(--varLetra);
+   font-size: 18px;
+}
+
+/*textarea del form*/
+#msm{
+  inline-size: 100%;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+
+/*footer*/
+footer{
+    margin-left: 2.5%;
+    width: 100%;
+  }
+
+.containerF{
+        display:inline-flex;
+        flex-direction: row;
+        background-color: black;
+        width: 95%;
+        margin: 5% auto;
+        flex-wrap: wrap;
+        justify-content: space-around;   
+}
+
+
+/*medias queries*/
+/*para resoluciones menores a 640 píxeles de ancho (móviles).*/
+@media screen and (max-width: 640px) {
+
+  #navUl{
+     margin-right:0%;
+     margin-left: 35%;
+     display: inline;
+   }
+
+  main{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body{
+    max-width: 80%;
+    padding:0
+  }  
+
+  .row{
+    margin: 5% 5%;
+    margin-left: 25%;
+    margin-right: 0%;
+
+  }
+
+  img{
+     max-width: 100%;
+  }
+
+  video{
+    max-width: 100%;
+    margin-left: 12%;
+
+  }
+
+  .card{
+     padding-right: 5%;
+     padding-left: 25%;  
+  }
+
+  .content{
+    padding-right: 0%;
+    padding-left: 0%; 
+    margin:0%;
+    margin-right: 25%;
+  }
+
+#form{
+  margin: 0%;
+  max-width: 100%;
+}
+
+  .containerF{
+    text-align: center;
+    margin: 0%;
+  }
+
+  footer{
+    padding:0%;
+    margin-left: 15%;
+    margin-right: 0%;
+  }
+
+}
